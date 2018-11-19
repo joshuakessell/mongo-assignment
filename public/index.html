@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tiny Improvements</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="nav col-12">
+      Tiny Improvements
+    </div>
+    <div class="row">
+      <div class="jumbotron col-3 center-text left-col">
+        <h1>Kudos Log</h1> <br />
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kudosModal">Give Kudos!</button>
+      </div>
+
+      <div class="col-9 container-fluid kudos-list">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="kudosModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered ">  
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Give Kudos</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="container form-group">
+              <div class="row">
+                <div class="col-sm-3 form-area">
+                  <select class="form-control btn btn-secondary" id="fromKudo">
+                    <option selected disabled value=''>From</option>
+                  </select>
+                  <select class="form-control btn btn-secondary" id="toKudo">
+                    <option selected disabled value=''>To</option>
+                  </select>
+                  <button class='form-control' id="submit">Post</button>
+                </div>
+                <div class="col-sm-9 form-area">
+                  <input class='form-control' type="text" id="kudo-subject" placeholder="Type a subject..." />
+                  <textarea class='form-control' type="text" id="kudo-message" rows="5" placeholder="Type a message..."></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <div id='404'></div>
+          <button type="button" class="btn btn-success" id="postKudos">Post</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body{
+  background-color: #e9ecef;
+}
+
+.nav{
+  background-color: #2e506e;
+  color: whitesmoke;
+  width:100%;
+  padding: 10px;
+  margin:0px;
+}
+
+.jumbotron{
+  background-color: #9fc6e9;
+}
+
+.left-col{
+  height: 100%;
+  position:  fixed;
+}
+
+.center{
+  margin: auto;
+  width: 100%;
+  margin: 10px 10px 0px 0px;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.form-area2{
+  float: left;
+}
+
+#fromKudo, #toKudo { 
+  margin:10px;
+  margin-bottom: 20px;
+}
+
+#kudos-container {
+  background-color: white;
+  padding:10px;
+  color: darkorchid;
+  border: 2px;
+  border-color: black;
+  border-style: dotted;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+.kudos {
+  background-color: white;
+  color: black;
+
+}
